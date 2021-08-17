@@ -2,6 +2,7 @@ import React from "react";
 import "./SoftwareSkill.scss";
 import {skillsSection} from "../../portfolio";
 
+
 export default function SoftwareSkill() {
   return (
     <div>
@@ -14,7 +15,9 @@ export default function SoftwareSkill() {
                 className="software-skill-inline"
                 name={skills.skillName}
               >
-                <i className={skills.fontAwesomeClassname}></i>
+                {/* <i className={skills.fontAwesomeClassname}></i> */}
+                {skills.skillIcon}
+                {/* <Flutter className="skill-icon"/> */}
                 <p>{skills.skillName}</p>
               </li>
             );

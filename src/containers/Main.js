@@ -28,6 +28,7 @@ function Main() {
     setIsDark(JSON.parse(localStorage.getItem("isDark")));
   });
   const changeTheme = () => {
+    console.log("Change Theme ==> ",!isDark)
     setIsDark(!isDark);
     localStorage.setItem("isDark", isDark);
   };

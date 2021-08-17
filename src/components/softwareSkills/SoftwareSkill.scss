@@ -15,17 +15,22 @@
   margin-bottom: 20px;
 }
 
-.software-skill-inline > i {
+.software-skill-inline > .skill-icon {
   color: $subTitle;
+  fill: $subTitle;
+  height: 50px;
+  width: 50px;
 }
 
-.software-skill-inline > i:hover {
+.software-skill-inline > .skill-icon:hover {
   color: $skillsColor;
+  fill: $skillsColor;
 }
 .software-skill-inline > p {
   color: $subTitle;
   font-size: 10px;
 }
-.software-skill-inline > i:hover ~ p {
+.software-skill-inline > .skill-icon:hover ~ p {
   color: $skillsColor;
+  fill: $skillsColor;
 }
