@@ -21,7 +21,6 @@ import Loading from "../../containers/loading/Loading";
 // }
 
 const DisplayLottie = ({ src }) => {
-  console.log("Lottie : ", src)
   return (
     <Suspense fallback={<Loading />}>
       {/* <Lottie options={defaultOptions} isClickToPauseDisabled={true} /> */}

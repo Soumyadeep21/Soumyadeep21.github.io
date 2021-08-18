@@ -28,9 +28,10 @@ function Main() {
     setIsDark(JSON.parse(localStorage.getItem("isDark")));
   });
   const changeTheme = () => {
-    console.log("Change Theme ==> ",!isDark)
+    console.log("Change From : ", isDark);
     setIsDark(!isDark);
-    localStorage.setItem("isDark", isDark);
+    console.log("Changed To : ", !isDark);
+    localStorage.setItem("isDark", !isDark);
   };
   return (
     <div className={isDark ? "dark-mode" : null}>
